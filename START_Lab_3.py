@@ -16,7 +16,7 @@ def lab3Question2(decimal_number):
     # Return "zero" if the number is 0, "positive" if the number is positive, and "negative" if the number is negative
     # Return "invalid" if the input is not a float
 
-    if not isinstance(decimal_number, float):
+    if not isinstance(decimal_number, (int,float)):
         return "invalid"
     
     if decimal_number > 0:
@@ -86,6 +86,8 @@ def lab3Question5(temperature, scale_used):
 
 print(lab3Question1(5, 15))
 print(lab3Question2(3.5))
+print(lab3Question2(0))
+print(lab3Question2(-10))
 print(lab3Question3(1850))
 print(lab3Question4(5, 10, 3))  
 print(lab3Question4(5, "10", 3)) 
